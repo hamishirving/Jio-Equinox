@@ -573,3 +573,86 @@ h1 {
       float: left;
       width: 49%;
       margin-right: 0; } }
+
+.explainer {
+  padding-bottom: 60px; }
+  .explainer .explainer-content {
+    font-size: 22px; }
+    .explainer .explainer-content .explainer {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1em;
+      margin: 40px auto; }
+      .explainer .explainer-content .explainer:before, .explainer .explainer-content .explainer:after {
+        content: "";
+        display: table; }
+      .explainer .explainer-content .explainer:after {
+        clear: both; }
+    @media (min-width: 640px) {
+      .explainer .explainer-content .one img {
+        width: 190px;
+        float: left;
+        width: 15%;
+        margin-right: 2%; }
+      .explainer .explainer-content .one p {
+        float: left;
+        width: 32%;
+        margin-right: 0; } }
+    @media (min-width: 640px) {
+      .explainer .explainer-content .two img {
+        width: 190px;
+        float: left;
+        width: 15%;
+        margin-right: 2%;
+        margin-left: 25.5%; }
+      .explainer .explainer-content .two p {
+        float: left;
+        width: 32%;
+        margin-right: 0; } }
+    @media (min-width: 640px) {
+      .explainer .explainer-content .three img {
+        width: 190px;
+        float: left;
+        width: 15%;
+        margin-right: 2%;
+        margin-left: 51%; }
+      .explainer .explainer-content .three p {
+        float: left;
+        width: 32%;
+        margin-right: 0; } }
+
+.download {
+  color: #ffffff;
+  background-color: #9784db;
+  text-align: center; }
+  .download .download-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1em;
+    padding-top: 50px;
+    padding-bottom: 70px; }
+    .download .download-content:before, .download .download-content:after {
+      content: "";
+      display: table; }
+    .download .download-content:after {
+      clear: both; }
+    .download .download-content h1 {
+      margin-top: 10px;
+      margin-bottom: 30px; }
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  background-color: #E9F0F5; }
+  footer .footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1em;
+    padding: 75px 0; }
+    footer .footer-content:before, footer .footer-content:after {
+      content: "";
+      display: table; }
+    footer .footer-content:after {
+      clear: both; }
+  footer span {
+    margin: 0 20px; }

@@ -4002,5 +4002,5 @@ module.exports=function($){if($.support.cors||!$.ajaxTransport||!window.XDomainR
 Webflow.require('ix').init([
   {"slug":"fade-in-on-load","name":"Fade in on load","value":{"style":{"opacity":0,"x":"0px","y":"10px"},"triggers":[{"type":"load","preload":true,"stepsA":[{"opacity":1,"transition":"transform 800ms ease 0ms, opacity 800ms ease 0ms","x":"0px","y":"0px"}],"stepsB":[]}]}},
   {"slug":"text-fade-in","name":"Text Fade In","value":{"style":{"opacity":0,"x":"0px","y":"10px"},"triggers":[{"type":"load","stepsA":[{"opacity":1,"transition":"transform 800ms ease 0ms, opacity 800ms ease 0ms","x":"0px","y":"0px"}],"stepsB":[]}]}},
-  {"slug":"fade-in-on-scroll","name":"Fade in on scroll","value":{"style":{"opacity":0,"x":"0px","y":"10px"},"triggers":[{"type":"scroll","offsetBot":"20%","stepsA":[{"opacity":1,"transition":"transform 800ms ease 0ms, opacity 800ms ease 0ms","x":"0px","y":"0px"}],"stepsB":[]}]}}
+  {"slug":"fade-in-on-scroll","name":"Fade in on scroll","value":{"style":{"opacity":0,"x":"0px","y":"10px"},"triggers":[{"type":"scroll","offsetBot":"25%","stepsA":[{"opacity":1,"transition":"transform 800ms ease 0ms, opacity 800ms ease 0ms","x":"0px","y":"0px"}],"stepsB":[]}]}}
 ]);
