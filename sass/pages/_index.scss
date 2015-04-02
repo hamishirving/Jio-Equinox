@@ -1,7 +1,10 @@
 // GLOBAL STYLES
 
+body {
+	background-color: #E9F0F5;
+}
+
 h1 {
-	font-size: 44px;
 	line-height: 1.3;
 	font-weight: 200;
 	margin: 20px 0;
@@ -13,29 +16,49 @@ h1 {
     background-color: $primary-color;
 
 	@include break-at(640px) {
+		padding-bottom: 40px;
+    }
+
+	@include break-at(991px) {
 		height: 500px;
     }
 
 	.header-content {
 		@include container;
 		padding-top: 60px;
+		
+		@include break-at(640px) {
+			padding-top: 40px;
+	    }
+
+		h1 {
+			font-size: 2.125em;
+		}
 	}
 
 	.header-title {
 		color: $white-color;
 		@include break-at(640px) {
-			padding-top: 40px;
+			padding-top: 20px;
 			@include columns(6);
-
+		}
+		@include break-at(991px) {
+			padding-top: 60px;
 			h1 {
+				font-size: 2.750em;
 				padding-right: 30px;
 			}	
-		}	
+		}
 	}
 
 	.header-image {
+		max-width: 490px;
+		margin-top: 40px;
+		margin-bottom: -100px;
+
 		@include break-at(640px) {
-			width: 475px;
+			margin-top: 20px;
+			margin-bottom: -100px;
 			@include columns(6, omega);
 		}	
 	}
@@ -44,21 +67,50 @@ h1 {
 // EXPLAINER
 
 .explainer {
+	padding-top: 120px;
 	padding-bottom: 60px;
+	background-color: $white-color;
+	@include break-at(640px) {
+		padding-top: 80px;
+		padding-bottom: 40px;
+	}
+	@include break-at(991px) {
+		padding-top: 120px;
+		padding-bottom: 60px;
+	}
 
 	.explainer-content {
 		font-size: 22px;
 
-		.explainer {
+		.explainer-item {
 			@include container;
-			margin: 40px auto; 
+			margin: 40px auto;
+			text-align: center;
+			transform-style: preserve-3d;
+
+			img {
+				width: 190px;
+			} 
 		}
 
 		.one {
 			@include break-at(640px) {
 				img {
-					width: 190px;
-					@include columns(2);
+					@include columns(2, omega);
+					@include push(2);
+					// @include vertical-align;
+				}
+				p {
+					@include columns(6);
+					// @include vertical-align;
+					padding-left: 20px;
+					text-align: left;
+				}	
+			}
+			@include break-at(991px) {
+				img {
+					@include columns(2, omega);
+					@include push(0);
 				}
 				p {
 					@include columns(4, omega);
@@ -69,8 +121,18 @@ h1 {
 		.two {
 			@include break-at(640px) {
 				img {
-					width: 190px;
-					@include columns(2);
+					@include columns(2, omega);
+					@include push(2);
+				}
+				p {
+					@include columns(6);
+					padding-left: 20px;
+					text-align: left;
+				}	
+			}
+			@include break-at(991px) {
+				img {
+					@include columns(2, omega);
 					@include push(3);
 				}
 				p {
@@ -82,8 +144,18 @@ h1 {
 		.three {
 			@include break-at(640px) {
 				img {
-					width: 190px;
-					@include columns(2);
+					@include columns(2, omega);
+					@include push(2);
+				}
+				p {
+					@include columns(6);
+					padding-left: 20px;
+					text-align: left;
+				}	
+			}
+			@include break-at(991px) {
+				img {
+					@include columns(2, omega);
 					@include push(6);
 				}
 				p {

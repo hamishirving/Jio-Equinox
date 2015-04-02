@@ -28,6 +28,8 @@
 -------------------------------------------------------*/
 /*	Container
 -------------------------------------------------------*/
+/*  Vertical align
+-------------------------------------------------------*/
 /*-------------------------------------------------------*\
     Helper classes
 /*-------------------------------------------------------*/
@@ -370,7 +372,7 @@ td, th {
     Base
 /*-------------------------------------------------------*/
 html {
-  font-size: 62.5%; }
+  font-size: 1em; }
 
 body {
   line-height: 1.5;
@@ -384,7 +386,7 @@ body {
       font-size: 16px; } }
   @media (min-width: 1200px) {
     body {
-      font-size: 19px; } }
+      font-size: 16px; } }
 
 img {
   max-width: 100%;
@@ -536,8 +538,10 @@ th:last-child, td:last-child {
 /*---------*\
     Site
 /*---------*/
+body {
+  background-color: #E9F0F5; }
+
 h1 {
-  font-size: 44px;
   line-height: 1.3;
   font-weight: 200;
   margin: 20px 0; }
@@ -545,6 +549,9 @@ h1 {
 .header {
   background-color: #5ad3c0; }
   @media (min-width: 640px) {
+    .header {
+      padding-bottom: 40px; } }
+  @media (min-width: 991px) {
     .header {
       height: 500px; } }
   .header .header-content {
@@ -557,53 +564,105 @@ h1 {
       display: table; }
     .header .header-content:after {
       clear: both; }
+    @media (min-width: 640px) {
+      .header .header-content {
+        padding-top: 40px; } }
+    .header .header-content h1 {
+      font-size: 2.125em; }
   .header .header-title {
     color: #ffffff; }
     @media (min-width: 640px) {
       .header .header-title {
-        padding-top: 40px;
+        padding-top: 20px;
         float: left;
         width: 49%;
-        margin-right: 2%; }
+        margin-right: 2%; } }
+    @media (min-width: 991px) {
+      .header .header-title {
+        padding-top: 60px; }
         .header .header-title h1 {
+          font-size: 2.75em;
           padding-right: 30px; } }
-  @media (min-width: 640px) {
-    .header .header-image {
-      width: 475px;
-      float: left;
-      width: 49%;
-      margin-right: 0; } }
+  .header .header-image {
+    max-width: 490px;
+    margin-top: 40px;
+    margin-bottom: -100px; }
+    @media (min-width: 640px) {
+      .header .header-image {
+        margin-top: 20px;
+        margin-bottom: -100px;
+        float: left;
+        width: 49%;
+        margin-right: 0; } }
 
 .explainer {
-  padding-bottom: 60px; }
+  padding-top: 120px;
+  padding-bottom: 60px;
+  background-color: #ffffff; }
+  @media (min-width: 640px) {
+    .explainer {
+      padding-top: 80px;
+      padding-bottom: 40px; } }
+  @media (min-width: 991px) {
+    .explainer {
+      padding-top: 120px;
+      padding-bottom: 60px; } }
   .explainer .explainer-content {
     font-size: 22px; }
-    .explainer .explainer-content .explainer {
+    .explainer .explainer-content .explainer-item {
       max-width: 1000px;
       margin: 0 auto;
       padding: 0 1em;
-      margin: 40px auto; }
-      .explainer .explainer-content .explainer:before, .explainer .explainer-content .explainer:after {
+      margin: 40px auto;
+      text-align: center;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d; }
+      .explainer .explainer-content .explainer-item:before, .explainer .explainer-content .explainer-item:after {
         content: "";
         display: table; }
-      .explainer .explainer-content .explainer:after {
+      .explainer .explainer-content .explainer-item:after {
         clear: both; }
+      .explainer .explainer-content .explainer-item img {
+        width: 190px; }
     @media (min-width: 640px) {
       .explainer .explainer-content .one img {
-        width: 190px;
         float: left;
         width: 15%;
-        margin-right: 2%; }
+        margin-right: 0;
+        margin-left: 17%; }
+      .explainer .explainer-content .one p {
+        float: left;
+        width: 49%;
+        margin-right: 2%;
+        padding-left: 20px;
+        text-align: left; } }
+    @media (min-width: 991px) {
+      .explainer .explainer-content .one img {
+        float: left;
+        width: 15%;
+        margin-right: 0;
+        margin-left: 0%; }
       .explainer .explainer-content .one p {
         float: left;
         width: 32%;
         margin-right: 0; } }
     @media (min-width: 640px) {
       .explainer .explainer-content .two img {
-        width: 190px;
         float: left;
         width: 15%;
+        margin-right: 0;
+        margin-left: 17%; }
+      .explainer .explainer-content .two p {
+        float: left;
+        width: 49%;
         margin-right: 2%;
+        padding-left: 20px;
+        text-align: left; } }
+    @media (min-width: 991px) {
+      .explainer .explainer-content .two img {
+        float: left;
+        width: 15%;
+        margin-right: 0;
         margin-left: 25.5%; }
       .explainer .explainer-content .two p {
         float: left;
@@ -611,10 +670,21 @@ h1 {
         margin-right: 0; } }
     @media (min-width: 640px) {
       .explainer .explainer-content .three img {
-        width: 190px;
         float: left;
         width: 15%;
+        margin-right: 0;
+        margin-left: 17%; }
+      .explainer .explainer-content .three p {
+        float: left;
+        width: 49%;
         margin-right: 2%;
+        padding-left: 20px;
+        text-align: left; } }
+    @media (min-width: 991px) {
+      .explainer .explainer-content .three img {
+        float: left;
+        width: 15%;
+        margin-right: 0;
         margin-left: 51%; }
       .explainer .explainer-content .three p {
         float: left;
